@@ -20,7 +20,7 @@ public class CarsController {
 
     @RequestMapping(value = "/v1/list", produces = "application/json")
     public List<String> cars() {
-        return Arrays.asList("BMW", "Hyundai Verna", "Audi", "Ferrari");
+        return Arrays.asList("BMW - v1", "Hyundai Verna - v1", "Audi", "Ferrari - v1");
     }
     
     @RequestMapping(value = "/v1/isAlive",produces = "text/html")
@@ -30,7 +30,7 @@ public class CarsController {
     
     @RequestMapping(value = "/v2/list", produces = "application/json")
     public List<String> carsV2() {
-        return Arrays.asList("BMW", "Hyundai Verna", "Audi", "Ferrari");
+        return Arrays.asList("BMW - v2", "Hyundai Verna - v2", "Audi - v2", "Ferrari - v2");
     }
     
     @RequestMapping(value = "/v2/isAlive",produces = "text/html")
